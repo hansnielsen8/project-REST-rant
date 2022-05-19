@@ -16,7 +16,6 @@ function home () {
         <button className="btn-primary">Places Page</button>
     </a>
 </main>
-
         </Def>
     )
 }

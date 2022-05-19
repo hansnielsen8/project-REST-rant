@@ -8,9 +8,9 @@ function index(data) {
                 <h2>{place.name}</h2>
                 <p clasName="text-center">
                     {place.cuisines}
-                </p>
+                </p> */
                 <img src={place.pic} alt={place.name} />
-                <p clasName="text-center">
+                 <p clasName="text-center">
                     Located in {place.city}, {place.state}
                 </p>
             </div>
