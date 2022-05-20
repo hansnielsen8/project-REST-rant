@@ -21,9 +21,21 @@ nav li {
 nav a {
   color: white;
   font-size: 1.5em;
+  text-align: center;
 }
 
 nav a:hover {
   color: pink;
   text-decoration: none;
+}
+
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+main {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: white;
 }
