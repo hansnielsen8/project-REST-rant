@@ -1,4 +1,4 @@
-//CONFIG
+//config
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override')
@@ -12,7 +12,7 @@ app.use(express.static('public'))
 app.use(express.urlencoded({  extended:true  }))
 app.use(methodOverride('_method'))
 
-//ROUTES
+//routes
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
@@ -23,7 +23,7 @@ app.get('*', (req, res) => {
     res.render('error404')
 })
 
-app.listen(PORT, () => console.log(`Live and worldwide at port ${PORT}`))
+app.listen(PORT, () => console.log(`Live on port ${PORT}`))
 
 
 
