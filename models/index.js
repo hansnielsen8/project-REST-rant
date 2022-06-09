@@ -1,3 +1,4 @@
+require('dotenv').require()
 const mongoose = require('mongoose')
 
 mongoose.connect(process.env.MONGO_URI, {
@@ -5,5 +6,6 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true
 })
 
+module.exports.Place = require('./places')
 
 module.exports.Place = require('./places')
