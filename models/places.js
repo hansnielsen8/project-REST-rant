@@ -8,9 +8,10 @@ const placeSchema = new mongoose.Schema({
     state: { type: String, default: 'USA' },
     founded: {
         type: Number,
-        min: [1673, 'Wow, really? Seems pretty old.'],
-        max: [new Date().getFullYear(), 'No future places, please.']
-    }
+        min: [1673, 'Surely not that old?!'],
+        max: [new Date().getFullYear(), 'This is the future!']
+    },
+    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
 })
 
 placeSchema.methods.showEstablished = function(){
